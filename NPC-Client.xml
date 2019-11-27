@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
 <Beta>False</Beta>
+<Category>network:</Category>
+  <Name>NPS-Client</Name>
+  <Description>
+    使用方法：
+    三个变量环境：
+    目标服务器IP
+    目标服务器端口
+    目标服务器KEY
+    按照顺序填入APPLY 即可使用
+  </Description>
+  <Overview>内网穿透</Overview>
+  <Support>https://www.lxg2016.com/53740.html</Support>
+  <Registry>https://hub.docker.com/r/rsg2019/npc-client</Registry>
+  <Repository>rsg2019/npc-client</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>服务器IP</Name>
+      <Value>IP</Value>
+    </Variable>
+    <Variable>
+      <Name>端口</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>key</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  </Data>
+ </WebUI>
+  <Icon>http://i.imgur.com/LWfuAG2.png</Icon>
+</Container>
