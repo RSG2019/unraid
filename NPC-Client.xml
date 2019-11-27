@@ -22,17 +22,17 @@
   <Environment>
     <Variable>
       <Value>IP</Value>
-      <Name>服务器的IP</Name>
+      <Name>IP</Name>
       <Mode/>
     </Variable>
     <Variable>
       <Value>PORT</Value>
-      <Name>服务器端口</Name>
+      <Name>PORT</Name>
       <Mode/>
     </Variable>
     <Variable>
       <Value>VKEY</Value>
-      <Name>连接的KEY</Name>
+      <Name>VKE</Name>
       <Mode/>
     </Variable>
   </Environment>
