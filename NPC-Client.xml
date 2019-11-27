@@ -17,9 +17,15 @@
   <Repository>rsg2019/npc-client</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Networking>
+    <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>9980</HostPort>
+        <ContainerPort>9980</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data/>
   <Environment>
