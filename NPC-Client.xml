@@ -20,21 +20,5 @@
   <Networking>
     <Mode>host</Mode>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>服务器IP</Name>
-      <Value>IP</Value>
-    </Variable>
-    <Variable>
-      <Name>端口</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>key</Name>
-      <Value></Value>
-    </Variable>
-  </Environment>
-  </Data>
- </WebUI>
   <Icon>http://i.imgur.com/LWfuAG2.png</Icon>
 </Container>
