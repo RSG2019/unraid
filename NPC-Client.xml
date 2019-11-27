@@ -4,11 +4,11 @@
 <Category>network:</Category>
   <Name>NPS-Client</Name>
   <Description>
-    使用方法：&#xD;
-    三个变量环境:&#xD;
-    目标服务器IP&#xD;
-    目标服务器端口&#xD;
-    目标服务器KEY&#xD;
+    使用方法：&#xD;&#xD;
+    三个变量环境:&#xD;&#xD;
+    目标服务器IP&#xD;&#xD;
+    目标服务器端口&#xD;&#xD;
+    目标服务器KEY&#xD;&#xD;
     按照顺序填入APPLY 即可使用
   </Description>
   <Overview>NPS-CLIENT</Overview>
