@@ -19,6 +19,8 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>host</Mode>
+    <Publish/>
   </Networking>
+  
   <Icon>http://i.imgur.com/LWfuAG2.png</Icon>
 </Container>
