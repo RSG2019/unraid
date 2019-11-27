@@ -5,7 +5,7 @@
   <Name>NPS-Client</Name>
   <Description>
     使用方法：
-    三个变量环境： /目标服务器IP  /目标服务器端口  /目标服务器KEY /按照顺序填入APPLY 即可使用
+    三个变量环境:;目标服务器IP;目标服务器端口;目标服务器KEY;按照顺序填入APPLY 即可使用
   </Description>
   <Overview>NPS-CLIENT</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
