@@ -21,17 +21,17 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>IP</Value>
+      <Value>服务器IP</Value>
       <Name>IP</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>PORT</Value>
+      <Value>服务器端口</Value>
       <Name>PORT</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>VKEY</Value>
+      <Value>服务器KEY</Value>
       <Name>VKE</Name>
       <Mode/>
     </Variable>
