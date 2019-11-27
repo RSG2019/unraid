@@ -17,31 +17,22 @@
   <Repository>rsg2019/npc-client</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9980</HostPort>
-        <ContainerPort>9980</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
+  <Network>host</Network>
   <Data/>
   <Environment>
     <Variable>
-      <Value>cloud\\.yourdomain\\.com</Value>
-      <Name>domain</Name>
+      <Value>IP</Value>
+      <Name>you server ip</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>admin</Value>
-      <Name>username</Name>
+      <Value>PORT</Value>
+      <Name>you server port</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>yourpassword</Value>
-      <Name>password</Name>
+      <Value>VKEY</Value>
+      <Name>key</Name>
       <Mode/>
     </Variable>
   </Environment>
