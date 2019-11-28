@@ -14,7 +14,7 @@
   <Overview>NPS-CLIENT</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
   <Registry>https://hub.docker.com/r/rsg2019/npc-client</Registry>
-  <Repository>rsg2019/npc-client</Repository>
+  <Repository>rsg2019/nps-client</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>host</Network>
@@ -32,7 +32,7 @@
     </Variable>
     <Variable>
       <Value>服务器KEY</Value>
-      <Name>VKE</Name>
+      <Name>VKEY</Name>
       <Mode/>
     </Variable>
   </Environment>
