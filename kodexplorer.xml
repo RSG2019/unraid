@@ -1,16 +1,35 @@
 <?xml version="1.0"?>
 <Container>
+<Beta>False</Beta>
+<Category>file:</Category>
   <Name>kodexplorer</Name>
-  <Repository>rsg2019/kodexplorer</Repository>
-  <Registry>https://hub.docker.com/repository/docker/rsg2019/kodexplorer</Registry>
-  <Network>host</Network>
-  <Shell>sh</Shell>
-  <Privileged>false</Privileged>
-  <Support>www.lxg2016.com</Support>
-  <Project>https://hub.docker.com/repository/docker/rsg2019/kodexplorer</Project>
-  <Overview>KodExplorer</Overview>
-  <WebUI>http://[IP]:[PORT:9988]<WebUI/>
   <Description>
-    可道云，目录建议映射/mnt方便管理和读取整个用户区
+    可道云很好用的web管理,目录最好映射/mnt
   </Description>
+  <Overview>kodexplorer</Overview>
+  <Support>https://www.lxg2016.com/53740.html</Support>
+  <Registry>https://hub.docker.com/r/rsg2019/kodexplorer</Registry>
+  <Repository>rsg2019/kodexplorer</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>host</Network>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt</HostDir>
+      <ContainerDir>/config/www/data/User/admin/home/我的文档/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
 </Container>
