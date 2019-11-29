@@ -8,8 +8,8 @@
   </Description>
   <Overview>kodexplorer</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
-  <Registry>https://hub.docker.com/r/rsg2019/kodexplorer</Registry>
-  <Repository>rsg2019/kodexplorer</Repository>
+  <Registry></Registry>
+  <Repository>xaljer/kodexplorer</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>bridge</Network>
