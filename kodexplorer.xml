@@ -12,7 +12,6 @@
   <Repository>rsg2019/kodexplorer</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Network>bridge</Network>
   <Environment>
     <Variable>
       <Value>99</Value>
