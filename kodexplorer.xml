@@ -12,8 +12,8 @@
   <Repository>rsg2019/kodexplorer</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Network>bridge</Network>
-  <WebUI>http://[IP]:[PORT:9988]</WebUI>
+  <Network>host</Network>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Environment>
     <Variable>
       <Value>99</Value>
@@ -33,15 +33,5 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Networking>
-  <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9988</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
   <Icon>https://github.com/RSG2019/unraid/blob/master/kodexplorer.jpg</Icon>
 </Container>
