@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container>
   <Name>kodexplorer</Name>
   <Repository>rsg2019/kodexplorer</Repository>
   <Registry>https://hub.docker.com/repository/docker/rsg2019/kodexplorer</Registry>
