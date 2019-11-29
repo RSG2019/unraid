@@ -44,7 +44,5 @@
     </Publish>
   </Networking>
   <Icon>https://d1q6f0aelx0por.cloudfront.net/fa443219-42e0-4886-96b4-8733de694b72-c641a5d6-1ebf-44ee-9607-aef9b4ca1a3b-logo_large.png</Icon>
-  <Config Name="Container Path" Target="/DoH" Default="" Mode="rw" Description="Container Path: /DoH" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/doh-server</Config>
-  <Config Name="DoH Version" Target="DoH_V" Default="" Mode="" Description="Find the versions here: https://github.com/m13253/dns-over-https/releases or set to 'latest' without quotes to download the latest version" Type="Variable" Display="always" Required="true" Mask="false">latest</Config>
-  <Config Name="Golang Download URL" Target="GO_DL_URL" Default="" Mode="" Description="Container Variable: GO_DL_URL" Type="Variable" Display="advanced" Required="true" Mask="false">https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz</Config>
+  <Config Name="Golang Download URL" Target="GO_DL_URL" Mode="" Description="Container Variable: GO_DL_URL" Type="Variable" Display="advanced" Required="true" Mask="false">https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz</Config>
 </Container>
