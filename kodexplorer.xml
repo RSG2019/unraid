@@ -28,8 +28,8 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt</HostDir>
-      <ContainerDir>/config/www/data/User/admin/home/我的文档/unRAID/</ContainerDir>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/config/www/data/User/admin/home/unraid</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
