@@ -12,7 +12,6 @@
   <Repository>rsg2019/kodexplorer</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <WebUI>http://[IP]:[PORT:9988]<WebUI/>
   <Network>host</Network>
   <Environment>
     <Variable>
