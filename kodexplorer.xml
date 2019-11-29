@@ -39,7 +39,7 @@
         <HostPort>9988</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
-        <Name>http端口</Name>
+        <Name>http</Name>
       </Port>
     </Publish>
   </Networking>
