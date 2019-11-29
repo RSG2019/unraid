@@ -13,23 +13,4 @@
   <Description>
     可道云，目录建议映射/mnt方便管理和读取整个用户区
   </Description>
-  <Environment>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/doh-server</HostDir>
-      <ContainerDir>/config/www/data/User/admin/home/我的文档/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
 </Container>
