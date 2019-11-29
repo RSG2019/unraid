@@ -13,6 +13,7 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>host</Network>
+  <WebUI>http://[IP]:[PORT:9988]<WebUI/>
   <Environment>
     <Variable>
       <Value>99</Value>
@@ -32,5 +33,4 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <lcon>https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=898456916,2090614778&fm=58&s=C013C736D576FE3148C705C60200C0B2&bpow=121&bpoh=75</icon>
 </Container>
