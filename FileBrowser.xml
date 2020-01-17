@@ -7,9 +7,10 @@
   <Privileged>false</Privileged>
   <Support>www.lxg2016.com</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
-  <Overview>
-    使用荒野无灯大神镜像！具体教请访问www.lxg2016.com
-  </Overview>
+  <Overview>filebrowser</Overview>
+  <Description>
+    使用荒野五等大神的镜像，具体使用教程可访问www.lxg2016.com查看
+  </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8083]</WebUI>
   <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
@@ -38,12 +39,12 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>1000</Value>
+      <Value>0</Value>
       <Name>PUID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>100</Value>
+      <Value>0</Value>
       <Name>PGID</Name>
       <Mode/>
     </Variable>
