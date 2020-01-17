@@ -42,17 +42,4 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>需要管理的文件目录</HostDir>
-      <ContainerDir>/myfiles</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Icon>https://raw.githubusercontent.com/maschhoff/docker/master/filebrowser/35781395.png</Icon>
 </Containers>
