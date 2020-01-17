@@ -22,7 +22,7 @@
   <DonateLink/>
   <Description></Description>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish/>
   </Networking>
   <Data>
