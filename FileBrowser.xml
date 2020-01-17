@@ -1,17 +1,65 @@
 <?xml version="1.0"?>
-<Container>
-<Beta>False</Beta>
-<Category>files:</Category>
-  <Name>FileBrowse</Name>
-  <Description>
-   镜像使用的荒野无灯大神的，
-   具体使用教程请参考www.lxg2016.com
-  </Description>
-  <Overview>FileBrowse</Overview>
-  <Support>https://www.lxg2016.com/53740.html</Support>
-  <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
-  <Repository>80x86/filebrowser</Repository>
-  <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
-  <Network>host</Network>
-</Containers>
+<Container version="2">
+  <Name>FileBrowser</Name>
+  <Repository>filebrowser/filebrowser</Repository>
+  <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
+  <Network>br0</Network>
+  <MyIP></MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/78481-support-knex666-filebrowser/</Support>
+  <Project>https://github.com/filebrowser/filebrowser</Project>
+  <Overview>File Browser - Webbased File Browser including sharing functions etc.&#xD;
+&#xD;
+https://github.com/filebrowser/filebrowser&#xD;
+&#xD;
+Just Mount other Folder to/srv&#xD;
+Example&#xD;
+/mnt/user/Media/ &amp;gt; /srv/Media&#xD;
+/mnt/user/Docs/ &amp;gt; /srv/Docs&#xD;
+&#xD;
+Read&#xD;
+https://docs.filebrowser.xyz/configuration for the config</Overview>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]/files/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs>-d /db/database.db</PostArgs>
+  <CPUset/>
+  <DateInstalled>1551348361</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>File Browser - Webbased File Browser including sharing functions etc.&#xD;
+&#xD;
+https://github.com/filebrowser/filebrowser&#xD;
+&#xD;
+Just Mount other Folder to/srv&#xD;
+Example&#xD;
+/mnt/user/Media/ &amp;gt; /srv/Media&#xD;
+/mnt/user/Docs/ &amp;gt; /srv/Docs&#xD;
+&#xD;
+Read&#xD;
+https://docs.filebrowser.xyz/configuration for the config</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/SHARE</HostDir>
+      <ContainerDir>/srv</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filebrowser/</HostDir>
+      <ContainerDir>/db/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/srv" Default="" Mode="rw" Description="Container Path: /srv" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/SHARE/</Config>
+  <Config Name="Host Path 2" Target="/db/" Default="" Mode="rw" Description="Container Path: /db/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
+</Container>
+
