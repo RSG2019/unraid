@@ -14,7 +14,6 @@
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Network>host</Network>
-  <Data/>
   <Environment>
     <Variable>
       <Value>1000</Value>
@@ -42,7 +41,7 @@
       <Mode/>
     </Variable>
   </Environment>
-    <Data>
+  <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/filebrowser</HostDir>
       <ContainerDir>/config</ContainerDir>
