@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
   <Name>FileBrowser</Name>
-  <Repository>80x86/filebrowser</Repository>
+  <Repository>80x86/filebrowser:2.9.0-arm64</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
