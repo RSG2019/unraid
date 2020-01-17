@@ -2,7 +2,7 @@
 <Container>
 <Beta>False</Beta>
 <Category>files:</Category>
-  <Name>File Browse</Name>
+  <Name>FileBrowse</Name>
   <Description>
    镜像使用的荒野无灯大神的，
    具体使用教程请参考www.lxg2016.com
@@ -42,4 +42,17 @@
       <Mode/>
     </Variable>
   </Environment>
+    <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>需要管理的文件目录</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/maschhoff/docker/master/filebrowser/35781395.png</Icon>
 </Containers>
