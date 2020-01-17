@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container>
   <Name>FileBrowser</Name>
   <Repository>80x86/filebrowser</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
