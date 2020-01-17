@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
-  <Support>www.lxg2016.com</Support>
+  <Support>https://www.lxg2016.com</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
   <Overview>filebrowser</Overview>
   <Description>
