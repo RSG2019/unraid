@@ -14,44 +14,4 @@
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Network>host</Network>
-  <Environment>
-    <Variable>
-      <Value>1000</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>00</Value>
-      <Name>UMASK_SET</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>面板访问端口</Value>
-      <Name>WEB_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>使用输入on否者off</Value>
-      <Name>SSL</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>需要管理的文件目录</HostDir>
-      <ContainerDir>/myfiles</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Icon>https://raw.githubusercontent.com/maschhoff/docker/master/filebrowser/35781395.png</Icon>
 </Containers>
