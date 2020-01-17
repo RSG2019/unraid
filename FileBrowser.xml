@@ -7,7 +7,7 @@
    镜像使用的荒野无灯大神的，
    具体使用教程请参考www.lxg2016.com
   </Description>
-  <Overview>File Browse</Overview>
+  <Overview>FileBrowse</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
   <Repository>80x86/filebrowser</Repository>
