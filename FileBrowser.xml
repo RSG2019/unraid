@@ -3,7 +3,7 @@
   <Name>FileBrowser</Name>
   <Repository>80x86/filebrowser</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
-  <Network>bridge</Network>
+  <Network>Bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://www.lxg2016.com</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
@@ -22,7 +22,7 @@
   <DonateLink/>
   <Description></Description>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>Bridge</Mode>
     <Publish/>
   </Networking>
   <Data>
