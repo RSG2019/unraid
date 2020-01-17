@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Container>
 <Beta>False</Beta>
-<Category>network:</Category>
-  <Name>NPS-Client</Name>
+<Category>files:</Category>
+  <Name>File Browse</Name>
   <Description>
-  镜像使用的荒野无灯大神的，
-  具体使用教程请参考www.lxg2016.com
+   镜像使用的荒野无灯大神的，
+   具体使用教程请参考www.lxg2016.com
   </Description>
   <Overview>File Browse</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
