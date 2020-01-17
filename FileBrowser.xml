@@ -1,64 +1,71 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>FileBrowser</Name>
-  <Repository>filebrowser/filebrowser</Repository>
-  <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
-  <Network>br0</Network>
-  <MyIP></MyIP>
+  <Repository>80x86/filebrowser</Repository>
+  <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
+  <Network>host</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/78481-support-knex666-filebrowser/</Support>
-  <Project>https://github.com/filebrowser/filebrowser</Project>
-  <Overview>File Browser - Webbased File Browser including sharing functions etc.&#xD;
-&#xD;
-https://github.com/filebrowser/filebrowser&#xD;
-&#xD;
-Just Mount other Folder to/srv&#xD;
-Example&#xD;
-/mnt/user/Media/ &amp;gt; /srv/Media&#xD;
-/mnt/user/Docs/ &amp;gt; /srv/Docs&#xD;
-&#xD;
-Read&#xD;
-https://docs.filebrowser.xyz/configuration for the config</Overview>
+  <Support>www.lxg2016.com</Support>
+  <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
+  <Overview>
+    使用荒野无灯大神镜像！具体教请访问www.lxg2016.com
+  </Overview>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]/files/</WebUI>
+  <WebUI>http://[IP]:[PORT:8083]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
   <ExtraParams></ExtraParams>
-  <PostArgs>-d /db/database.db</PostArgs>
+  <PostArgs></PostArgs>
   <CPUset/>
-  <DateInstalled>1551348361</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>File Browser - Webbased File Browser including sharing functions etc.&#xD;
-&#xD;
-https://github.com/filebrowser/filebrowser&#xD;
-&#xD;
-Just Mount other Folder to/srv&#xD;
-Example&#xD;
-/mnt/user/Media/ &amp;gt; /srv/Media&#xD;
-/mnt/user/Docs/ &amp;gt; /srv/Docs&#xD;
-&#xD;
-Read&#xD;
-https://docs.filebrowser.xyz/configuration for the config</Description>
+  <Description></Description>
   <Networking>
-    <Mode>br0</Mode>
+    <Mode>host</Mode>
     <Publish/>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/SHARE</HostDir>
-      <ContainerDir>/srv</ContainerDir>
+      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/filebrowser/</HostDir>
-      <ContainerDir>/db/</ContainerDir>
+      <HostDir>想管理的路径</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>on或off</Value>
+      <Name>SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>000</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8083</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
-  <Config Name="Host Path 1" Target="/srv" Default="" Mode="rw" Description="Container Path: /srv" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/SHARE/</Config>
-  <Config Name="Host Path 2" Target="/db/" Default="" Mode="rw" Description="Container Path: /db/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
+  <Config Name="Host Path 1" Target="/myfiles" Default="" Mode="rw" Description="Container Path: /myfiles" Type="Path" Display="always" Required="false" Mask="false">/mnt/</Config>
+  <Config Name="Host Path 2" Target="/config/" Default="" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
 </Container>
