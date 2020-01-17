@@ -21,10 +21,6 @@
   <DonateText/>
   <DonateLink/>
   <Description></Description>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish/>
-  </Networking>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/filebrowser</HostDir>
