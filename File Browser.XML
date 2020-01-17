@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container>
+<Beta>False</Beta>
+<Category>network:</Category>
+  <Name>NPS-Client</Name>
+  <Description>
+  镜像使用的荒野无灯大神的，
+  具体使用教程请参考www.lxg2016.com
+  </Description>
+  <Overview>File Browse</Overview>
+  <Support>https://www.lxg2016.com/53740.html</Support>
+  <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
+  <Repository>80x86/filebrowser</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Network>host</Network>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>00</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>面板访问端口</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>使用输入on否者off</Value>
+      <Name>SSL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>需要管理的文件目录</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/maschhoff/docker/master/filebrowser/35781395.png</Icon>
+</Containers>
