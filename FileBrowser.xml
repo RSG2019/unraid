@@ -5,11 +5,11 @@
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
-  <Support>https://www.lxg2016.com</Support>
+  <Support>https://www.lxg2016.com/54202.html</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
   <Overview>filebrowser</Overview>
   <Description>
-    使用荒野无灯大神的镜像，具体使用教程可访问www.lxg2016.com查看
+    使用荒野无灯大神的镜像，具体使用教程可访问https://www.lxg2016.com/54202.html查看
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8083]</WebUI>
