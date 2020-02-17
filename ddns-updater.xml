@@ -30,11 +30,6 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>0</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value>8020</Value>
       <Name>LISTENINGPORT</Name>
       <Mode/>
