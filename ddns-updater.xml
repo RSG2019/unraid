@@ -5,11 +5,11 @@
   <Registry>https://hub.docker.com/r/80x86/ddns-updater</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
-  <Support>https://www.lxg2016.com/54202.html</Support>
+  <Support>https://www.lxg2016.com/54300.html</Support>
   <Project></Project>
   <Overview>ddns</Overview>
   <Description>
-    使用荒野无灯大神的ddns-updater镜像，具体使用教程可访问https://www.lxg2016.com/54202.html查看
+    使用荒野无灯大神的ddns-updater镜像，具体使用教程可访问https://www.lxg2016.com/54300.html查看
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8020]</WebUI>
