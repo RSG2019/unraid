@@ -13,7 +13,7 @@
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8020]</WebUI>
-  <Icon>https://secure.gravatar.com/avatar/a219903a95636b2e219160a17bf4d696.jpg?s=80&r=g&d=mm</Icon>
+  <Icon>https://secure.gravatar.com/avatar/a219903a95636b2e219160a17bf4d696.jpg</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
