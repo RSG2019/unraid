@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DNS-dnsmasq</Name>
+  <Repository>rsg2019/dnsmasq</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x901A;&#x8FC7;dnsmasq&#x642D;&#x5EFA;&#x7684;dns&#x670D;&#x52A1;&#x5668;&#x5E26;&#x6709;webui&#x7BA1;&#x7406;&#x754C;&#x9762;&#xD;
+&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x8BF7;&#x8BBF;&#x95EE;www.lxg2016.com</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/RSG2019/unraid/master/dns.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1582251595</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x901A;&#x8FC7;dnsmasq&#x642D;&#x5EFA;&#x7684;dns&#x670D;&#x52A1;&#x5668;&#x5E26;&#x6709;webui&#x7BA1;&#x7406;&#x754C;&#x9762;&#xD;
+&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#x8BF7;&#x8BBF;&#x95EE;www.lxg2016.com</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dnsmasq/dnsmasq.conf</HostDir>
+      <ContainerDir>/etc/dnsmasq.conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin</Value>
+      <Name>HTTP_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>HTTP_PASS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x7BA1;&#x7406;&#x7528;&#x6237;" Target="HTTP_USER" Default="" Mode="" Description="Container Variable: HTTP_USER" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="&#x7BA1;&#x7406;&#x5BC6;&#x7801;" Target="HTTP_PASS" Default="" Mode="" Description="Container Variable: HTTP_PASS" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="config" Target="/etc/dnsmasq.conf" Default="" Mode="rw" Description="Container Path: /etc/dnsmasq.conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dnsmasq/dnsmasq.conf</Config>
+</Container>
