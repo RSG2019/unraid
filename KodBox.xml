@@ -12,7 +12,7 @@
 &#x4F7F;&#x7528;&#x6559;&#x7A0B;&#xFF0C;&#x8BBF;&#x95EE;www.lxg2016.com &#x8FDB;&#x884C;&#x67E5;&#x770B;&#xFF01;</Overview>
   <Category>Network:Web Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-icon.png</Icon>
+  <Icon>http://download.lxg2016.com/data/image/kod.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
