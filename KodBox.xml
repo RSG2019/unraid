@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kodbox</Name>
+  <Repository>rsg2019/kodbox</Repository>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://www.lxg2016.com</Support>
+  <Overview>&#x672C;&#x5BB9;&#x5668;&#x662F;&#x57FA;&#x4E8E;linuxserver/nginx&#x4FEE;&#x6539;&#x800C;&#x6765;&#xFF0C;&#x9488;&#x5BF9;kodbox&#x5B98;&#x65B9;&#x7684;&#x4F18;&#x5316;&#x5EFA;&#x8BAE;&#xD;
+&#x5BF9;PHP,NGINX&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF01;&#xD;
+&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#xFF0C;&#x8BBF;&#x95EE;www.lxg2016.com &#x8FDB;&#x884C;&#x67E5;&#x770B;&#xFF01;</Overview>
+  <Category>Network:Web Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1592794861</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <Description>&#x672C;&#x5BB9;&#x5668;&#x662F;&#x57FA;&#x4E8E;linuxserver/nginx&#x4FEE;&#x6539;&#x800C;&#x6765;&#xFF0C;&#x9488;&#x5BF9;kodbox&#x5B98;&#x65B9;&#x7684;&#x4F18;&#x5316;&#x5EFA;&#x8BAE;&#xD;
+&#x5BF9;PHP,NGINX&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF01;&#xD;
+&#x4F7F;&#x7528;&#x6559;&#x7A0B;&#xFF0C;&#x8BBF;&#x95EE;www.lxg2016.com &#x8FDB;&#x884C;&#x67E5;&#x770B;&#xFF01;</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/kodbox</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Host Port 2" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/nginx" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/kodbox</Config>
+</Container>
