@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>bitwardenrs111111</Name>
+  <Name>bitwardenrs</Name>
   <Repository>bitwardenrs/server:latest</Repository>
   <Registry>https://hub.docker.com/r/bitwardenrs/server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://www.lxg2016.com</Support>
+  <Support>https://www.lxg2016.com/54626.html</Support>
   <Project>https://github.com/dani-garcia/bitwarden_rs/</Project>
   <Overview>unraid &#x642D;&#x5EFA;bitwardenrs&#x6559;&#x7A0B;&#xFF1A;&#xD;
 www.lxg2016.com</Overview>
