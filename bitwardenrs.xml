@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bitwardenrs111111</Name>
+  <Repository>bitwardenrs/server:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitwardenrs/server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://www.lxg2016.com</Support>
+  <Project>https://github.com/dani-garcia/bitwarden_rs/</Project>
+  <Overview>unraid &#x642D;&#x5EFA;bitwardenrs&#x6559;&#x7A0B;&#xFF1A;&#xD;
+www.lxg2016.com</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/bitwardenrs.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1594630831</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>unraid &#x642D;&#x5EFA;bitwardenrs&#x6559;&#x7A0B;&#xFF1A;&#xD;
+www.lxg2016.com</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>端口</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ssl1</HostDir>
+      <ContainerDir>/ssl</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/bitwarden1</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin&#x90AE;&#x7BB1;</Value>
+      <Name>SERVER_ADMIN_EMAIL</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>SIGNUPS_ALLOWED</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>INVITATIONS_ALLOWED</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>WEBSOCKET_ENABLED</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>ADMIN_TOKEN</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>{certs="/ssl/certs.pem",key="/ssl/key.pem"}</Value>
+      <Name>ROCKET_TLS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI HTTP Port" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="SERVER_ADMIN_EMAIL" Target="SERVER_ADMIN_EMAIL" Default="me@domain.com" Mode="{3}" Description="Container Variable: Server Admin E-Mail" Type="Variable" Display="always" Required="true" Mask="false">admin&#x90AE;&#x7BB1;</Config>
+  <Config Name="SIGNUPS_ALLOWED" Target="SIGNUPS_ALLOWED" Default="true|false" Mode="{3}" Description="Container Variable: Signups" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="INVITATIONS_ALLOWED" Target="INVITATIONS_ALLOWED" Default="true|false" Mode="{3}" Description="Container Variable: Invitations" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="WEBSOCKET_ENABLED" Target="WEBSOCKET_ENABLED" Default="false" Mode="{3}" Description="Container Variable: Websockets Enabled" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="ADMIN_TOKEN" Target="ADMIN_TOKEN" Default="" Mode="{3}" Description="Container Variable: ADMIN_TOKEN" Type="Variable" Display="always" Required="true" Mask="true">1</Config>
+  <Config Name="Host Key 6" Target="ROCKET_TLS" Default="" Mode="" Description="Container Variable: ROCKET_TLS" Type="Variable" Display="always" Required="false" Mask="false">{certs="/ssl/certs.pem",key="/ssl/key.pem"}</Config>
+  <Config Name="Host Path 1" Target="/ssl" Default="" Mode="rw" Description="Container Path: /ssl" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ssl</Config>
+  <Config Name="Storage" Target="/data" Default="/mnt/user/appdata/bitwarden" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/bitwarden</Config>
+</Container>
