@@ -14,7 +14,7 @@ www.lxg2016.com</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/bitwardenrs.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png</Icon>
+  <Icon>http://download.lxg2016.com/data/image/bitwardenrs.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
