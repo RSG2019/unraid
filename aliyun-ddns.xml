@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aliyun-ddns</Name>
+  <Repository>sanjusss/aliyun-ddns</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://secure.gravatar.com/avatar/a219903a95636b2e219160a17bf4d696.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1599023729</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>请填入aliyun AKid</Value>
+      <Name>AKID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>请填入aliyun AKSCT</Value>
+      <Name>AKSCT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>填入域名多个解析请用英文逗号分开</Value>
+      <Name>DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>300</Value>
+      <Name>REDO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>CHECKLOCAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>CNIPV4</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>A</Value>
+      <Name>TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>600</Value>
+      <Name>TTL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x963F;&#x91CC;&#x4E91;&#x7684;Access Key ID" Target="AKID" Default="" Mode="" Description="Container Variable: AKID" Type="Variable" Display="always" Required="false" Mask="false">请填入aliyun AKid</Config>
+  <Config Name="&#x963F;&#x91CC;&#x4E91;&#x7684;Access Key Secret" Target="AKSCT" Default="" Mode="" Description="Container Variable: AKSCT" Type="Variable" Display="always" Required="false" Mask="false">请填入aliyun AKSCT</Config>
+  <Config Name="&#x57DF;&#x540D;" Target="DOMAIN" Default="" Mode="" Description="Container Variable: DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">填入域名多个解析请用英文逗号分开</Config>
+  <Config Name="&#x66F4;&#x65B0;&#x95F4;&#x9694;" Target="REDO" Default="" Mode="" Description="Container Variable: REDO" Type="Variable" Display="always" Required="false" Mask="false">300</Config>
+  <Config Name="&#x662F;&#x5426;&#x68C0;&#x67E5;&#x672C;&#x5730;&#x7F51;&#x5361;IP" Target="CHECKLOCAL" Default="false|true" Mode="" Description="Container Variable: CHECKLOCAL" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="&#x68C0;&#x67E5;IPv4&#x5730;&#x5740;&#x65F6;&#xFF0C;&#x4EC5;&#x4F7F;&#x7528;&#x4E2D;&#x56FD;&#x670D;&#x52A1;&#x5668;" Target="CNIPV4" Default="false|true" Mode="" Description="Container Variable: CNIPV4" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="&#x9700;&#x8981;&#x66F4;&#x6539;&#x7684;&#x8BB0;&#x5F55;&#x7C7B;&#x578B;" Target="TYPE" Default="A|AAAA|A,AAAA" Mode="" Description="Container Variable: TYPE" Type="Variable" Display="always" Required="false" Mask="false">A</Config>
+  <Config Name="&#x670D;&#x52A1;&#x5668;&#x7F13;&#x5B58;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#x7684;&#x65F6;&#x957F;" Target="TTL" Default="600|300|100|10" Mode="" Description="Container Variable: TTL" Type="Variable" Display="always" Required="false" Mask="false">600</Config>
+</Container>
