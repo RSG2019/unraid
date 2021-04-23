@@ -14,7 +14,7 @@
   <Overview>NPS-CLIENT</Overview>
   <Support>https://www.lxg2016.com/53740.html</Support>
   <Registry>https://hub.docker.com/r/rsg2019/npc-client</Registry>
-  <Repository>rsg2019/nps-client</Repository>
+  <Repository>rsg2019/nps-client:1.0</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>host</Network>
@@ -36,5 +36,5 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Icon>https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=6dd157f3d92a60595210e61c100f53a6/1ad5ad6eddc451dabd15b7d1b8fd5266d016322c.jpg</Icon>
+  <Icon>https://bkimg.cdn.bcebos.com/pic/1ad5ad6eddc451dabd15b7d1b8fd5266d016322c?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg</Icon>
 </Container>
